@@ -19,22 +19,12 @@ export default function Home() {
 
 
 
-<span>A</span>
 <span><_navBar/></span>
-<span>B</span>
 
 
 
 
-
-
-
-
-
-
-
-      
-   <_cards/>
+   {/* <_cards/> */}
       
     </div>
   )

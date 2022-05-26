@@ -1,10 +1,15 @@
 import {Card} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+// import _dice6 from '../components/_dice6'
+
+
+
+
  const _cards = () => {
   return (
     <>
    <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="_dice6.png" />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
