@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import _navbar from '../components/_navbar';
+// import _navbar from '../components/_navbar';
 import _form from '../components/_form';
 
 
@@ -56,7 +56,7 @@ export default function Home() {
       <div className="footercontacts">PHONE<br/>Daksh:<br/>+919646583392<br/>Abinandan:<br/>+918054689033</div>
       <div className="footeraddress">OUR ADDRESS<br/>E-Cell Office SAC<br/>Building<br/>IIT Roorkee<br/>Uttrakhand-<br/>247667,INDIA</div>
     </div>
-    <div className="form">form here</div>
+    <div className="form"><_form/></div>
   </div>
 </div>
 
