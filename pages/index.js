@@ -4,7 +4,12 @@ import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import _navbar from '../components/_navbar';
 import _form from '../components/_form';
-
+import _designcard from '../components/_designcard';
+import _vistacard from '../components/_vistacard';
+import _saleablecard from '../components/_saleablecard';
+import _expocard from '../components/_expocard';
+import _productathoncard from '../components/_productathoncard';
+import _ideastormcard from '../components/_ideastormcard';
 
 export default function Home() {
   return (
@@ -30,7 +35,19 @@ export default function Home() {
     <div className="headericon">LOG IN or REGISTER</div>
   </div>
   <div className="events">Events</div>
-  <div className="body"></div>
+  <div className="body">
+    <div className="cardrowfirst">
+      <div className="card"><_designcard/></div>
+      <div className="card"><_ideastormcard/></div>
+      <div className="card"><_productathoncard/></div>
+    </div>
+    <div className="cardrowsecond">
+      <div className="card"><_saleablecard/></div>
+      <div className="card"><_expocard/></div>
+      <div className="card"><_vistacard/></div>
+    </div>
+
+  </div>
   <div className="footer">
     <div className="contact">
       <div className="footerlogoemail"><img src="Esummitlogofinal.webp" className="Esummitlogo2"/></div>
