@@ -1,52 +1,59 @@
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
+
+const _navbar =()=>{
+    return(
+<>
+<div className="headernavbar">
+                    {/* <div className="navbar_left font"></div>
+                    <div className="navbar_right font" >Works</div>
+                    <div className="navbar_right font">Blogs</div>
+                    <div className="navbar_right font">Contact</div>  */}
+
+                    {/* <div className="headernavbar"> */}
 
 
 
 
 
-
-const _navbar = () =>{
-
-    return (
-        <>
-<Navbar bg="light" expand="lg">
-  <Container>
-    {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto"> 
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#home">Team</Nav.Link>
-        <Nav.Link href="#home">Events</Nav.Link>
-        <Nav.Link href="#home">Speakers</Nav.Link>
-        <Nav.Link href="#home">Sponsors</Nav.Link>
-        <Nav.Link href="#home">FAQ</Nav.Link>
-
-
-        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown> */}
+                    <a href="#" className="nav"></a>
+                    <ul className="menu">
+                        <li className="item">
+                            <a href ="#" className="link">HOME</a>
+                        </li>
+                        <li className="item">
+                            <a href ="#" className="link">TEAM</a>
+                        </li>
+                        <li className="item">
+                            <a href ="#" className="link">EVENTS</a>
+                        </li>
+                        <li className="item">
+                            <a href ="#" className="link">SPEAKERS</a>
+                        </li>
+                        <li className="item">
+                            <a href ="#" className="link">SPONSORS</a>
+                        </li>
+                        <li className="item">
+                            <a href ="#" className="link">FAQ</a>
+                        </li>
+                     </ul>
 
 
 
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
-
-        </>
 
 
+                     
+                     {/* </div> */}
+
+                    {/* <div className="hamburger">
+                        <span className="bell"></span>
+                        <span className="bell"></span>
+                        <span className="bell"></span>
+                    </div> */}
+                    
+             </div>
+    
+    </>
 
     );
-
 
 }
 export default _navbar;

@@ -1,59 +1,103 @@
+
+html{
+  margin: 0rem;
+  padding: 0rem;
+  width: 100%;
+  background-color: black;
+}
+
+
+
+
 .parent{
 display: flex;
 flex-direction: column;
+background-color: black;
 /* border:2px solid black; */
 }
 
 .header{
-  overflow-y: hidden;
-border:  1px solid rgb(78, 78, 44);
-height:5rem;
-width: 84.5rem;
+  width: 93%;
+  /* overflow-y: hidden; */
+/* border:  1px solid rgb(78, 78, 44); */
+height:max-content;
 display: flex;
 flex-direction: row;
+background-color: black;
+justify-content: center;
+position: fixed;
+
 }
 
 .events{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 4.5rem;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4.5rem; */
 display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5rem;
+/* border: 2px solid black; */
+/* color: whitesmoke; */
+height:max-content;
+/* width: 84.5rem;  */
+background-color: black;
+}
+
+.events_content{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 6rem;
+display: flex;
+flex-direction: row;
 justify-content: center;
 align-items: center;
 
 /* border: 2px solid black; */
 color: whitesmoke;
-height:10rem;
+height:max-content;
 width: 84.5rem; 
-background-color: rgb(78, 78, 44);
+background-color: black;
 }
+
 
 
 .body{
   display: flex;
   flex-direction: column;
-  background-color: rgb(78, 78, 44);
+  background-color: black;
   /* border: 2px solid black; */
-height:60rem;
-width: 84.5rem;  
+height:max-content;
+/* width: 84.5rem;   */
 }
 
 
 .footer{
   /* border: 2px solid black; */
-  height: 50rem;
-  width: 84.5rem;
+  height: max-content;
+  /* width: 84.5rem; */
   display: flex;
   flex-direction: row;
 
  
 }
 
-.headericon{
-  border: 1px solid rgb(78, 78, 44);
-  height: 5rem;
-  width: 20rem;
-  background-color: rgb(78, 78, 44);
-  color: black;
+.headericon_a{
+  border: 1px solid black;
+  flex: 2;
+  background-color: black;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.headericon_b{
+  border: 1px solid black;
+  flex: 2;
+  background-color: black;
+  color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   justify-content: center;
@@ -62,39 +106,71 @@ width: 84.5rem;
 }
 
 
-.headernavbar{
-  border: 1px solid rgb(78, 78, 44);
+
+/* .menu{
+  border: 1px solid black;
   padding: 1rem;
   display: flex;
   font-display: row;
-  height: 5rem;
-  width: 45rem;
+  flex-direction: row;
+  
+  flex: 5;
   justify-content: center;
   align-content: center;
-  background-color: rgb(78, 78, 44);
+  background-color: black;
+} */
+
+
+.headernavbar{
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  font-display: row;
+  flex-direction: row;
+  flex: 5;
+  /* width:40rem; */
+  justify-content: center;
+  align-content: center;
+  background-color: black;
 }
 
 .navbarelements{
-  color: black;
+  color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.9rem;
-  width:8rem;
+  
+  flex: 1;
   /* border: 2px solid black; */
 }
 
-.contact{
-  border: 1px solid rgb(78, 78, 44);
-  height: 50rem ;
-  width: 25rem;
+.contact_a{
+  border: 1px solid black;
+  height: max-content;
+ flex: 1;
 display: flex;
 flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+
+
+}
+
+.contact_b{
+  border: 1px solid black;
+  height: max-content;
+ flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+
 
 }
 
 .Esummitlogo{
+  background-color: black;
   padding: 0.3rem;
 height: 5rem;
 width: 18rem;
@@ -104,12 +180,18 @@ width: 18rem;
   padding: 1rem;
 height: 8rem;
 width: 25rem;
+background-color: black;
+display: flex;
+justify-content: center;
+/* border: 2px solid black; */
 }
 
 .Ecelllogo{
+  /* border: 2px solid black; */
   padding: 0.4rem;
 height: 6rem;
 width: 22rem;
+background-color: black;
 }
 
 /* .container{
@@ -137,7 +219,7 @@ width: 22rem;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: rgb(194, 170, 109);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -147,31 +229,48 @@ width: 22rem;
   transform-origin: bottom left;
 }
 
-.footerlogoemail{
-  border: 1px solid rgb(78, 78, 44);
-  height: 14rem;
+.footerlogoemail_a{
+  border: 1px solid black;
+  height: 10rem;
   width: 25rem;
-  color:black;
+  color:white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: xx-large;
-  background-color:rgb(78, 78, 44) ;
+  background-color:black ;
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+.footerlogoemail_b{
+  padding: 3rem;
+  border: 1px solid black;
+  height: 14rem;
+  width: 25rem;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+  background-color:black ;
+  /* display: flex;
+  justify-content: center; */
 
 }
 
 .footerfollowus{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height: 22rem;
   width: 25rem;
-  background-color:rgb(78, 78, 44) ;
+  background-color:black ;
   display: flex;
   flex-direction: column;
 }
 
 .footerfollowus_first{
-  border: 1px solid rgb(78, 78, 44);
+  padding: 3rem;
+  border: 1px solid black;
   height: 13rem;
   width: 25rem;
-  color: black;
+  color: white;
   font-size: xx-large;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
@@ -180,7 +279,7 @@ width: 22rem;
 }
 
 .footerfollowus_second{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height: 8rem;
   width: 25rem;
   display: flex;
@@ -188,7 +287,7 @@ width: 22rem;
 }
 
 .footerfollowusicon{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height: 4.5rem;
   width: 25rem;
   padding: 1.1rem;
@@ -196,32 +295,33 @@ width: 22rem;
 
 
 .footerfollowusiconsecond{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height: 4.5rem;
   width: 7rem;
 padding: 1.1rem;
 }
 
 .footerfollowusiconthird{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height: 4.5rem;
   width: 25rem;
 }
 
 .footerecelllogo{
-  border: 1px solid rgb(78, 78, 44);
-  height: 14rem;
+  border: 1px solid black;
+  height: max-content;
   width: 25rem;
-  background-color:rgb(78, 78, 44) 
+  background-color:black 
 
 }
 
 .footercontacts{
-  border: 1px solid rgb(78, 78, 44);
-  height: 18rem;
+  padding: 3rem;
+  border: 1px solid black;
+  height: 20rem;
   width: 25rem;
-  background-color:rgb(78, 78, 44) ;
-  color: black;
+  background-color:black;
+  color: white;
   font-size:2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
@@ -230,20 +330,21 @@ padding: 1.1rem;
 }
 
 .footeraddress{
-  border: 1px solid rgb(78, 78, 44);
+  padding: 3rem;
+  border: 1px solid black;
   height: 18rem;
   width: 25rem;
-  color: black;
-  background-color:rgb(78, 78, 44);
+  color: white;
+  background-color:black;
   font-size:2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .form{
-  border: 1px solid rgb(78, 78, 44);
+  border: 1px solid black;
   height:50rem ;
-  width: 35rem;
-  background-color:rgb(78, 78, 44) ;
+ flex: 2;
+  background-color:black;
   color: #000000;
   font-size: larger;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -253,29 +354,295 @@ padding: 1.1rem;
 display: flex;
 justify-content: center;
 align-items: center;
-/* border: 2px solid black; */
-height: 30rem;
-width: 84.2rem;
+border: 2px solid black;
+height: max-content;
 padding: 2rem;
-justify-content: space-between;
+/* justify-content: space-between; */
+flex-direction: row;
+gap: 8rem;
+background-color: black;
+/* width: 100%; */
 }
 
 
 .cardrowsecond{
 
   /* border: 2px solid black; */
+  background-color:black;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 30rem;
-  width: 84.2rem;
+  height: max-content;
   padding: 2rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 8rem;
   }
 
-  .card{ 
-    background-color:rgb(78, 78, 44) ;
-    /* border: 2px solid black; */
+  /* .card-img-top{
+    border-top-right-radius: 10rem;
+  } */
+
+  .card1{ 
+    background-color:black ;
+    border: 2px solid rgb(194, 170, 109);
     height: 25rem;
-    width: 18rem;
+    width: 20rem;
+    /* flex: 1; */
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  /* .card2{ 
+    background-color:rgb(78, 78, 44) ;
+    border: 2px solid black;
+    height: 25rem;
+    flex: 1;
+    border-top-right-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card3{ 
+    background-color:rgb(78, 78, 44) ;
+    border: 2px solid black;
+    height: 25rem;
+    flex: 1;
+    border-top-right-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  */
+
+.design_image{
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.btn.btn-primary{
+  border:1px solid grey;
+  background: black;
+}
+
+
+#formBasicPassword.form-control{
+  background: black;
+}
+
+
+#formBasicEmail.form-control{
+  background: black;
+}
+
+
+
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.navbar{
+  min-height: 4.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.menu{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2.5rem;
+}
+
+.nav{
+  font-style: 2rem;
+
+}
+
+.link{
+  transition: 0.1s ease;
+  color: white;
+}
+
+.link:hover{
+  color: rgb(78, 78, 44);
+}
+
+/* .hamburger{
+  display: none;
+  cursor: pointer;
+} */
+
+.bell{
+  display: block;
+  width:1.5rem;
+  height: .1rem;
+  margin: .3rem auto;
+  /* -webkit-transition:all 0.3s ease-in-out; */
+  background-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @media(max-width:1360px){
+
+    #cardgo1{
+      display: none;
+    }
+
+    #cardgo2{
+      display: none;
+    }
+
+    .card1{
+      width: 20rem;  
+    }
+
+/* .cardrowfirst{ */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center;
+border: 2px solid black;
+height: 30rem;
+padding: 2rem;
+justify-content: space-between; */
+/* flex-direction: column;  //onlythisremains */
+/* margin: 1rem; */
+/* gap: 8rem; */
+/* } */
+
+/* .footer{ */
+  /* border: 2px solid black; */
+  /* height: max-content; //onlythisremains */
+  /* width: 84.5rem; */
+  /* display: flex; //onlythisremains */
+  /* flex-direction: column-reverse; //onlythisremains */
+
+ 
+/* } */
+
+/* .cardrowsecond{ */
+
+  /* border: 2px solid black; */
+  /* display: flex; */
+  /* flex-direction: column; //onlythisremains */
+  /* justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 2rem;
+  justify-content: space-between; */
+  /* } */
+
+
+
+  /* } */
+
+  /* @media(max-width:768px){
+    html{
+      font-size: 80%;
+    }
+  }
+
+
+  @media(max-width:273px){
+    html{
+      font-size: 50%;
+    }
+  } 
+
+
+  @media(max-width:178px){
+    html{
+      font-size: 30%;
+    }
+  }  
+ */
+
+  }
+ @media(max-width:1181px){
+    #cardgo1{
+      display: block;
+    }
+
+    #cardgo2{
+      display: block;
+    }
+
+.headernavbar{
+  display: none;
+}
+.headericon_b{
+  display: none;
+}
+
+.cardrowfirst{ 
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center;
+border: 2px solid black;
+height: 30rem;
+padding: 2rem;
+justify-content: space-between; */
+flex-direction: column;  
+/* margin: 1rem; */
+/* gap: 8rem; */
+/* } */
+ }
+ 
+  .cardrowsecond{
+
+  /* border: 2px solid black; */
+  /* display: flex; */
+  flex-direction: column; 
+  /* justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 2rem;
+  justify-content: space-between; */
+   } 
+
+  .footer{ 
+  /* border: 2px solid black; */
+  /* height: max-content; 
+  width: 84.5rem; */
+ display: flex;
+  flex-direction: column-reverse; 
+
+ 
+ } 
+
+  
+ .Ecelllogo{
+   display: none;
+ }
+ .Esummitlogo2{
+   display: none;
+ }
+ .footerlogoemail_a{
+  display: none;
+}
+
+ }
