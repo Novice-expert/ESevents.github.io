@@ -3,17 +3,7 @@ const _navbar =()=>{
     return(
 <>
 <div className="headernavbar">
-                    {/* <div className="navbar_left font"></div>
-                    <div className="navbar_right font" >Works</div>
-                    <div className="navbar_right font">Blogs</div>
-                    <div className="navbar_right font">Contact</div>  */}
-
-                    {/* <div className="headernavbar"> */}
-
-
-
-
-
+                   
                     <a href="#" className="nav"></a>
                     <ul className="menu">
                         <li className="item">
@@ -35,20 +25,7 @@ const _navbar =()=>{
                             <a href ="#" className="link">FAQ</a>
                         </li>
                      </ul>
-
-
-
-
-
                      
-                     {/* </div> */}
-
-                    {/* <div className="hamburger">
-                        <span className="bell"></span>
-                        <span className="bell"></span>
-                        <span className="bell"></span>
-                    </div> */}
-                    
              </div>
     
     </>

@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import _navbar from '../components/_navbar';
 import _form from '../components/_form';
 // import _designcard from '../components/_designcard';
-import _vistacard from '../components/_vistacard';
-import _saleablecard from '../components/_saleablecard';
-import _expocard from '../components/_expocard';
-import _productathoncard from '../components/_productathoncard';
-import _ideastormcard from '../components/_ideastormcard';
+// import _vistacard from '../components/_vistacard';
+// import _saleablecard from '../components/_saleablecard';
+// import _expocard from '../components/_expocard';
+// import _productathoncard from '../components/_productathoncard';
+// import _ideastormcard from '../components/_ideastormcard';
 // import _useEffect from './api/_fetchdata';
 
 
@@ -26,91 +26,9 @@ export default function Home() {
 <div className="parent">
   <div className="header">
     <div className="headericon_a"><img className="Esummitlogo" src="Esummitlogofinal.webp" /></div>
-    
-    {/* <div> */}
 
     <_navbar/>
-    {/* </div> */}
-
-    {/* <div className="headernavbar"> */}
-                    {/* <div className="navbar_left font"></div>
-                    <div className="navbar_right font" >Works</div>
-                    <div className="navbar_right font">Blogs</div>
-                    <div className="navbar_right font">Contact</div>  */}
-
-                    {/* <div className="headernavbar"> */}
-
-
-
-
-{/* 
-                    <a href="#" className="nav"></a>
-                    <ul className="menu">
-                        <li className="item">
-                            <a href ="#" className="link">HOME</a>
-                        </li>
-                        <li className="item">
-                            <a href ="#" className="link">TEAM</a>
-                        </li>
-                        <li className="item">
-                            <a href ="#" className="link">EVENTS</a>
-                        </li>
-                        <li className="item">
-                            <a href ="#" className="link">SPEAKERS</a>
-                        </li>
-                        <li className="item">
-                            <a href ="#" className="link">SPONSORS</a>
-                        </li>
-                        <li className="item">
-                            <a href ="#" className="link">FAQ</a>
-                        </li>
-                     </ul> */}
-
-
-
-
-
-
-                     {/* </div> */}
-
-                    {/* <div className="hamburger">
-                        <span className="bell"></span>
-                        <span className="bell"></span>
-                        <span className="bell"></span>
-                    </div> */}
-                    
-             {/* </div> */}
     
-    
-
-
-    
-    
-    
-    
-    {/* <div className="headernavbar">
-      <div className="navbarelements">Home</div>
-      <div className="navbarelements">Team</div>
-      <div className="navbarelements">Events</div>
-      <div className="navbarelements">Speakers</div>
-      <div className="navbarelements">Sponsors</div>
-      <div className="navbarelements">FAQ</div>
-    </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div className="headericon_b">LOG IN or REGISTER</div>
   </div>
   <div className="events">
@@ -118,28 +36,8 @@ export default function Home() {
     </div>
   <div className="body">
     <div className="cardrowfirst">
-      <div className="card1">
-        
-        
-        
-        
-        <img className="cardimg" src="design.png"/> 
-            {/* <div className="info">
-              <h1>Heading</h1>
-              <p>Loremsfs</p>
-              <a href="#" class="btn">Read More</a>
-            </div> */}
-        
-        
-        
-        
-        </div>
-      {/* <_designcard/>  */}
-      {/* <_ideastormcard/> */}
-      {/* <_productathoncard/> */}
-      {/* <_saleablecard/> */}
-      {/* <_expocard/> */}
-      {/* <_vistacard/> */}
+      <div className="card1"><img className="cardimg" src="design.png"/></div>
+     
 
       <div className="card1"><img className="cardimg" src="ideastorm.png"/></div>
       <div className="cardimg" id="cardgo1"><img className="card1" src="Productathon.png"/></div>
@@ -180,113 +78,6 @@ export default function Home() {
   </div>
 </div>
 
-{/* 
-<script>
-
-function process()
-{
-
-url="https://api.esummit.in/events/all";
-
-fetch(url).then((response)=>{
-	return response.json();
-}).then((data)=>{
-	 document.getElementById("localtime").innerHTML=data.location.localtime;
-	 document.getElementById("name").innerHTML=data.location.name;
-	 document.getElementById("condition").innerHTML=data.current.condition.text
-	 document.getElementById("temperature").innerHTML=data.current.temp_c+"C";
-	 document.getElementById("photo").innerHTML=`<img src="${data.current.condition.icon}"/>`;
-	 document.getElementById("humidity").innerHTML=data.current.humidity;
-	 document.getElementById("precipitation").innerHTML=data.current.precip_in+" "+"mm";
-	 document.getElementById("CO").innerHTML=data.current.air_quality.co;
-	 document.getElementById("NO").innerHTML=data.current.air_quality.no2;
-	 document.getElementById("o3").innerHTML=data.current.air_quality.o3;
-	 document.getElementById("so2").innerHTML=data.current.air_quality.so2;
-	 document.getElementById("pm10").innerHTML=data.current.air_quality.pm10;
-	 document.getElementById("pm2_5").innerHTML=data.current.air_quality.pm2_5;
-	 console.log(data);
-
-})
-}
-
-
-</script>
- */}
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="fixed">
-  <p color="red">adkn</p>
-</div>
-
-
-
-
-
-
-
-      {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   )
 }
