@@ -10,7 +10,6 @@ function _useEffect(){
         object = res
     }
     getData();   
-    console.log("what");
 };
 
 export default _useEffect;

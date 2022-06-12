@@ -12,6 +12,7 @@ import _productathoncard from '../components/_productathoncard';
 import _ideastormcard from '../components/_ideastormcard';
 // import _useEffect from './api/_fetchdata';
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -117,7 +118,22 @@ export default function Home() {
     </div>
   <div className="body">
     <div className="cardrowfirst">
-      <div className="card1"><img className="card1" src="design.png"/> </div>
+      <div className="card1">
+        
+        
+        
+        
+        <img className="cardimg" src="design.png"/> 
+            {/* <div className="info">
+              <h1>Heading</h1>
+              <p>Loremsfs</p>
+              <a href="#" class="btn">Read More</a>
+            </div> */}
+        
+        
+        
+        
+        </div>
       {/* <_designcard/>  */}
       {/* <_ideastormcard/> */}
       {/* <_productathoncard/> */}
@@ -125,13 +141,13 @@ export default function Home() {
       {/* <_expocard/> */}
       {/* <_vistacard/> */}
 
-      <div className="card1"><img className="card1" src="ideastorm.png"/></div>
-      <div className="card1" id="cardgo1"><img className="card1" src="Productathon.png"/></div>
+      <div className="card1"><img className="cardimg" src="ideastorm.png"/></div>
+      <div className="cardimg" id="cardgo1"><img className="card1" src="Productathon.png"/></div>
     </div>
     <div className="cardrowsecond">
-      <div className="card1"><img className="card1" src="saleable.png"/></div>
-      <div className="card1"><img className="card1" src="expo.png"/></div>
-      <div className="card1" id="cardgo2"><img className="card1" src="vista.png"/></div>
+      <div className="cardimg"><img className="card1" src="saleable.png"/></div>
+      <div className="cardimg"><img className="card1" src="expo.png"/></div>
+      <div className="cardimg" id="cardgo2"><img className="card1" src="vista.png"/></div>
     </div>
 
   </div>
